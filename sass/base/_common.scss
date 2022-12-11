@@ -1,0 +1,38 @@
+body {
+  font-family: $main-font;
+  color: $main-text-color;
+}
+
+img {
+  display: block;
+}
+
+svg path {
+  fill: inherit;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-header {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $header-button-text-color;
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.list {
+  list-style: none;
+  list-style-type: none;
+}

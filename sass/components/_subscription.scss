@@ -1,0 +1,76 @@
+.subscription {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.subscription__label {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $accent-text-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subscription__input-mail {
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+    transition: $reg-trans;
+
+    &:focus {
+        border: 1px solid $accent-color;
+    }
+}
+
+.subscription__form {
+    display: flex;
+}
+
+.subscription__btn {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: $accent-text-color;
+    background-color: $accent-color;
+    align-items: center;
+    transition: $reg-trans;
+
+    &:active,
+    &:hover,
+    &:focus {
+        background-color: $order-button-bg-color;
+    }
+}
+
+.subscription__btn-text {
+    margin-left: 28px;
+    margin-right: 10px;
+}
+
+.subscription__btn-icon {
+    fill: $accent-text-color;
+}

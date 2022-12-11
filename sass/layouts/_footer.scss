@@ -1,0 +1,37 @@
+.footer {
+    background-color: $accent-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__block {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    margin-left: 0px;
+    font-style: normal;
+}
+
+.footer__contacts :not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__map,
+.footer__mail,
+.footer__phone {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.footer__map {
+    color: $accent-text-color;
+}
+
+.footer__mail,
+.footer__phone {
+    color: $footer-link-color;
+}

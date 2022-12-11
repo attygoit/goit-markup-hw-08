@@ -1,0 +1,40 @@
+.team {
+    background-color: $secondary-bg-color;
+}
+
+.team__list {
+    display: flex;
+    gap: 30px;
+    flex-basis: 1400px;
+    list-style: none;
+}
+
+.team__item {
+    background-color: $accent-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__item-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team__member-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $header-button-text-color;
+    margin-bottom: 10px;
+}
+
+.team__member-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+}

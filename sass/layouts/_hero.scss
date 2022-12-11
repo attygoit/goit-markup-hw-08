@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    background-position: center;
+    background-image: linear-gradient(to right, $hero-bg-color, $hero-bg-color), url(../img/hero-bg-img.jpeg);
+    background-color: $accent-bg-color;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+}
+
+.hero__header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-text-color;
+    margin-bottom: 30px;
+}
+
+.hero__order-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    display: block;
+    min-width: 216px;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: $accent-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 0px auto;
+    padding: 10px 32px;
+
+    &:active,
+    &:focus,
+    &:hover {
+    background-color: $order-button-bg-color;
+        }
+}
+

@@ -1,0 +1,12 @@
+.link {
+    text-decoration: none;
+    color: $header-button-text-color;
+
+&:hover,
+&:focus,
+&:active {
+    transition-property: color;
+    color: $accent-color;
+        }
+    }
+
