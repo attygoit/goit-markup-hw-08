@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,9 @@
 		<title>WebStudio</title>
 	</head>
 	<body>
-		<!-- Верхня лінія -->
+
+		<!-- UPPER LINE -->
+
 		<header class="header">
     <div class="header__container container">
 			<a class="logo link" href="./index.html"><span class="logo__main">Web<span class="logo__accent">Studio</span></span>
@@ -26,7 +29,6 @@
 					<li class="header__nav-item"><a href="#" class="link">Контакти</a></li>
 				</ul>
 			</nav>
-			<!-- Контакти -->
 			<ul class="list header__contacts">
 				<li class="header__contacts-item"><a href="mailto:info@devstudio.com" class="header__mail link">
 					<svg class="header__contacts-icon" width="16" height="12">
@@ -39,30 +41,108 @@
 					</svg>
 					+38 096 111 11 11</a></li>
 			</ul>
-		  </div>
+			<button 
+			
+			type="button" 
+			class="menu-mobile__open-btn js-open-menu"  
+			aria-expanded="false" 
+			aria-controls="mobile-menu">
+			
+			<svg width="40" height="40" aria-label="перемикач мобільного меню">
+				<use class="menu-mobile__icon--open" href="./img/icons.svg#ico-mm-open"></use>
+			</svg>
+
+			</button>
+	</div>
+
+<!-- MENU MOBILE -->
+
+   <div class="menu-mobile js-menu-container" id="mobile-menu">
+      <button class="menu-mobile__close-btn js-close-menu">
+        <svg width="40" height="40">
+          <use class="menu-mobile__icon--close" href="./img/icons.svg#ico-mm-close"></use>
+        </svg>
+      </button>
+      <nav class="menu-mobile__nav">
+        <ul class="menu-mobile__nav-list">
+          <li class="menu-mobile__nav-item">
+            <a href="./index.html" class="menu-mobile__link menu-mobile__current" >Студія</a>
+          </li>
+          <li class="menu-mobile__nav-item">
+            <a href="./portfolio.html" class="menu-mobile__link">Портфоліо</a>
+          </li>
+          <li class="menu-mobile__nav-item">
+            <a href="#" class="menu-mobile__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div>
+        <ul class="menu-mobile__contacts">
+          <li class="menu-mobile__phone">
+            <a href="tel:+380961111111" class="menu-mobile__phone-link">
+              +38 096 111 11 11
+            </a>
+          </li>
+
+          <li class="menu-mobile__mail">
+            <a href="mailto:info@devstudio.com" class="menu-mobile__mail-link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-mobile__social-list">
+          <li class="menu-mobile__social-item">
+            <a href="#" el="noreferrer noopener nofollow" class="menu-mobile__social-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="menu-mobile__social-item">
+            <a href="#" rel="noreferrer noopener nofollow" class="menu-mobile__social-link"
+              >Twitter</a
+            >
+          </li>
+          <li class="menu-mobile__social-item">
+            <a href="#" rel="noreferrer noopener nofollow" class="menu-mobile__social-link"
+              >Facebook</a
+            >
+          </li>
+          <li class="menu-mobile__social-item">
+            <a href="#" rel="noreferrer noopener nofollow" class="menu-mobile__social-link"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<script defer src="./js/mobile-menu.js"></script>
 		</header>
 		<main>
-			<!-- Hero header - основний заголовок + кнопка замовлення послуги -->
-			<section class="hero">
-				<div class="container">
+
+		<!-- HERO -->
+
+		<section class="hero">
+			<div class="container">
 				<h1 class="hero__header">
-					Ефективні рішення для
-					<br>
-					вашого бізнесу
+					Ефективні рішення для<br>вашого бізнесу
 				</h1>
 				<button data-open-modal class="hero__order-button">Замовити послугу</button>
 			</div>
-			</section>
-			<!-- Особливості -->
-			<section class="section">
+		</section>
+
+			<!-- FEATURES -->
+
+		<section class="section">
 				<div class="container">
 
-					<!-- Заголовок прихований -->
+					<!-- Fitures section title - hidden -->
 
-					<h2 class="visually-hidden">Особливості</h2>
-					<ul class="features list">
-						<li>
-							<div class="features__icon-background">
+			 <h2 class="visually-hidden">Особливості</h2>
+					<ul class="feature list">
+						<li class="feature__item">
+							<div class="feature__icon-background">
 								<svg class="feature__icon" width="70" height="70">
 								<use href="./img/icons.svg#ico-antenna"></use>
 							</svg>
@@ -70,8 +150,8 @@
 							<h3 class="feature__name">Увага до деталей</h3>
 							<p class="feature__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
 						</li>
-						<li>
-							<div class="features__icon-background">
+						<li class="feature__item">
+							<div class="feature__icon-background">
 								<svg class="feature__icon" width="70" height="70">
 								<use href="./img/icons.svg#ico-clock"></use>
 							</svg>
@@ -79,8 +159,8 @@
 							<h3 class="feature__name">Пунктуальність</h3>
 							<p class="feature__description">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 						</li>
-						<li>
-							<div class="features__icon-background">
+						<li class="feature__item">
+							<div class="feature__icon-background">
 								<svg class="feature__icon" width="70" height="70">
 								<use href="./img/icons.svg#ico-diagram"></use>
 							</svg>
@@ -88,8 +168,8 @@
 							<h3 class="feature__name">Планування</h3>
 							<p class="feature__description">Так само консультація з широким активом значною мірою зумовлює.</p>
 						</li>
-						<li>
-							<div class="features__icon-background">
+						<li class="feature__item">
+							<div class="feature__icon-background">
 								<svg class="feature__icon" width="70" height="70">
 								<use href="./img/icons.svg#ico-astronaut"></use>
 							</svg>
@@ -99,9 +179,9 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+		</section>
 
-			<!-- Чим ми займаємось (фото на яких зображена діяльність) -->
+			<!-- ACTIVITY -->
 			
 			<section class="activity section">
 				<div class="container">
@@ -109,9 +189,10 @@
 					<ul class="activity__list">
 						<li class="activity__item">
 							<img
-								src="./img/img-b1.jpeg"
+								srcset=" ./img/act/act-1-370.jpeg 370w, ./img/act/act-1-370-x2.jpeg 740w"
+								sizes="(min-width: 1600px) 740w"
+								src="./img/act/act-1-370.jpeg"
 								alt="руки на клавіатурі набирають код"
-								class="activity__img"
 								width="370"
 								height="294"
 							>
@@ -119,9 +200,10 @@
 						</li>
 						<li class="activity__item">
 							<img
-								src="./img/img-b2.jpeg"
+								srcset=" ./img/act/act-2-370.jpeg 370w, ./img/act/act-2-370-x2.jpeg 740w"
+								sizes="(min-width: 1600px) 740w"
+								src="./img/act/act-2-370.jpeg"
 								alt="смартфон та макет на моніторі, порівняння"
-								class="activity__img"
 								width="370"
 								height="294"
 							>
@@ -129,9 +211,10 @@
 						</li>
 						<li class="activity__item">
 							<img
-								src="./img/img-b3.jpeg"
-								alt="палітра кольорів на планшеті"
-								class="activity__img"		
+								srcset=" ./img/act/act-3-370.jpeg 370w, ./img/act/act-3-370-x2.jpeg 740w"
+								sizes="(min-width: 1600px) 740w"
+								src="./img/act/act-3-370.jpeg"
+								alt="палітра кольорів на планшеті"		
 								width="370"
 								height="294"
 							>
@@ -141,14 +224,31 @@
 				</div>
 			</section>
 
-			<!-- Наша команда (фото співробітників та підпис - прізвище, імʼя та назва посади, іконки соцмереж) -->
+			<!-- TEAM -->
 
 			<section class="team section">
 					<div class="container">
 					<h2 class="section-header">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-								<img src="./img/demianenko.jpeg" alt="Ігор Демʼяненко" class="team__img" width="270" height="260">
+								<img 
+
+								srcset="
+								./img/team/ihor-270.jpeg 270w,
+								./img/team/ihor-354.jpeg 354w,
+								./img/team/ihor-450.jpeg 450w,
+								./img/team/ihor-270-x2.jpeg 540w,
+								./img/team/ihor-354-x2.jpeg 708w,
+								./img/team/ihor-450-x2.jpeg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./img/team/ihor-270.jpeg"
+								alt="Ігор Демʼяненко" 
+								class="team__img" 
+								width="270" 
+								height="260"
+
+								>
 								<div class="team__item-description">
 									<h3 class="team__member-name">Ігор Демʼяненко</h3>
 									<p class="team__member-position">Product Designer</p>
@@ -185,7 +285,24 @@
 								</div>
 						</li>
 						<li class="team__item">
-								<img src="./img/repina.jpeg" alt="Ольга Рєпіна" width="270" height="260">
+								<img 
+
+								srcset="
+								./img/team/olha-270.jpeg 270w,
+								./img/team/olha-354.jpeg 354w,
+								./img/team/olha-450.jpeg 450w,
+								./img/team/olha-270-x2.jpeg 540w,
+								./img/team/olha-354-x2.jpeg 708w,
+								./img/team/olha-450-x2.jpeg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./img/team/ihor-270.jpeg"
+								alt="Ольга Рєпіна" 
+								class="team__img" 
+								width="270" 
+								height="260"
+								
+								>
 								<div class="team__item-description">
 									<h3 class="team__member-name">Ольга Рєпіна</h3>
 									<p class="team__member-position">Frontend Developer</p>
@@ -222,7 +339,24 @@
 								</div>
 						</li>
 						<li class="team__item">
-								<img src="./img/tarasov.jpeg" alt="Микола Тарасов" width="270" height="260">
+								<img 
+
+								srcset="
+								./img/team/mykola-270.jpeg 270w,
+								./img/team/mykola-354.jpeg 354w,
+								./img/team/mykola-450.jpeg 450w,
+								./img/team/mykola-270-x2.jpeg 540w,
+								./img/team/mykola-354-x2.jpeg 708w,
+								./img/team/mykola-450-x2.jpeg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./img/team/ihor-270.jpeg"
+								alt="Микола Тарасов" 
+								class="team__img" 
+								width="270" 
+								height="260"
+								
+								>
 								<div class="team__item-description">
 									<h3 class="team__member-name">Микола Тарасов</h3>
 									<p class="team__member-position">Marketing</p>
@@ -259,7 +393,24 @@
 								</div>
 						</li>
 						<li class="team__item">
-								<img src="./img/ermakov.jpeg" alt="Михайло Єрмаков" width="270" height="260">
+								<img 
+
+								srcset="
+								./img/team/myhailo-270.jpeg 270w,
+								./img/team/myhailo-354.jpeg 354w,
+								./img/team/myhailo-450.jpeg 450w,
+								./img/team/myhailo-270-x2.jpeg 540w,
+								./img/team/myhailo-354-x2.jpeg 708w,
+								./img/team/myhailo-450-x2.jpeg 900w
+								"
+								sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+								src="./img/team/ihor-270.jpeg"
+								alt="Михайло Єрмаков" 
+								class="team__img" 
+								width="270" 
+								height="260"
+								
+								>
 								<div class="team__item-description">
 									<h3 class="team__member-name">Михайло Єрмаков</h3>
 									<p class="team__member-position">UI Designer</p>
@@ -299,7 +450,7 @@
 				</div>
 			</section>
 
-<!-- Постійні клієнти -->
+<!-- CLIENTS -->
 
 			<section class="clients-section section">
 				<div class="container">
@@ -352,11 +503,14 @@
 			</section>
 		</main>
 
-		<!-- Підвал -->
+		<!-- FOOTER -->
+
 		<footer class="footer">
 			<div class="container footer__block">
-				<div>
-				<a href="./index.html" class="logo--bottom link">
+				<div class="for-tablet">
+
+				<div class="footer-address">
+				<a href="./index.html" class="logo__bottom link">
 					<span class="logo__main">Web<span class="logo__accent--bottom">Studio</span></span>
 				</a>
 				<address>
@@ -375,6 +529,7 @@
 						<li><a href="tel:+380961111111" class="footer__phone link">+38 096 111 11 11</a></li>
 					</ul>
 				</address>
+				
 				</div>
 				<div class="footer-social">
 					<p class="footer-social__header">Приєднуйтесь</p>
@@ -406,10 +561,9 @@
 							</a>
 						</li>
 					</ul>
-					
 				</div>
-				
-					<form name="subscription">
+				</div>
+				<form class="footer-form" name="subscription">
 						<div class="subscription">
 							<label for="sub-btn" class="subscription__label">Підпишіться на розсилку</label>
 							<div class="subscription__form">
@@ -419,8 +573,7 @@
 								</svg></button>
 							</div>
 					 	</div>
-						
-				    </form>
+				</form>
 				</div>
 		</footer>
 
@@ -485,5 +638,7 @@
 
 <script src="./js/modal.js"></script>
 
-	</body>
+
+
+</body>
 </html>

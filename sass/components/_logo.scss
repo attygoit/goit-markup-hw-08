@@ -1,9 +1,20 @@
 
 .logo {
     display: inline-block;
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 92px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 
 .logo__main {
@@ -19,9 +30,13 @@
     color: $secondary-text-color;
 }
 
-.logo--bottom {
+.logo__bottom {
     display: inline-block;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+       padding: 0 auto;
+    }
 }
 
 .logo__accent--bottom {

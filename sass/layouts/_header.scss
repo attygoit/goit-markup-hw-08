@@ -3,55 +3,117 @@
   border-color: $accent-text-color $accent-text-color $header-border-color $accent-text-color;
 }
 
-.header__container.container {
+.header__container{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $accent-text-color;
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $header-button-text-color;
+    display: none;
+  @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $header-button-text-color;
+    }
 }
 
 .header__nav-item:not(:last-child) {
   margin-right: 50px;
+  
 }
 
-.header__nav-item .link,
-.header__contacts-item .link {
+.header__nav-item .link {
   padding: 32px 0;
 }
 
-.header__contacts {
+.header__contacts-item .link {
   display: flex;
-  align-items: center;
-  margin-left: auto;
+  padding: 0 0;
 }
 
+.header__contacts {
+ display: none;
+ 
+  @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: start;
+      // justify-content: start;
+      margin-left: auto;
+      max-width: 768px;
+      flex-direction: column;
+    }
+   
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      flex-direction: row;
+    }
+  }
+
+
 .header__contacts-icon {
-  display: inline-block;
+  display: block;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.header__contacts-item:not(:first-child) {
-  margin-left: 50px;
+.header__contacts-item {
+  display: block;
+  
+
+}
+
+.header__contacts-item:first-child {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 21px;
+      padding-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+}
+}
+.header__contacts-item:last-child {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
+   
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 30px;
+}
+
 }
 
 .header__phone,
 .header__mail {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: $main-text-color;
+
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    }
+
 }
+

@@ -1,5 +1,9 @@
 .activity.section {
     padding-top: 0px;
+
+    @media screen and (max-width: 1199px) {
+    display: none;
+    }
 }
 
 .activity__list {
@@ -29,5 +33,3 @@
     background-color: $activity-bg-color;
     opacity: 1;
 }
-
-// .activity__img {}

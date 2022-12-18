@@ -1,0 +1,130 @@
+
+.menu-mobile__open-btn,
+.menu-mobile__close-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+  
+
+    transition: $reg-trans;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+    fill: $accent-color;
+    }
+}
+
+.menu-mobile {
+    position: fixed;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $accent-text-color;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: $reg-trans;
+}
+
+.menu-mobile.is-open {
+    transform: translateX(0);
+}
+
+.menu-mobile__close-btn{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-mobile__social-list,
+.menu-mobile__nav-list,
+.menu-mobile__contacts {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-mobile__nav-item {
+    margin-bottom: 32px;
+}
+
+.menu-mobile__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $header-button-text-color;
+
+    text-decoration: none;
+}
+
+.menu-mobile__current {
+    color: $accent-color;
+}
+
+.menu-mobile__phone {
+    margin-bottom: 32px;
+}
+
+.menu-mobile__mail {
+    margin-bottom: 64px;
+}
+
+.menu-mobile__phone-link  {
+        text-decoration: none;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+}
+
+.menu-mobile__mail-link {
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+}
+
+.menu-mobile__social-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-mobile__social-item:not(:last-child) {
+    padding-right: 10px;
+    border-right: $mobile-menu-devider;
+}
+
+.menu-mobile__social-item:not(:first-child) {
+    padding-left: 10px;
+}
+
+.menu-mobile__social-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent-color;
+    text-decoration: none;
+}

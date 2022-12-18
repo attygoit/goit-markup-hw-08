@@ -1,6 +1,7 @@
 .link {
     text-decoration: none;
     color: $header-button-text-color;
+    transition: $reg-trans;
 
 &:hover,
 &:focus,
