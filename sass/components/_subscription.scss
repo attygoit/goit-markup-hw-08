@@ -28,7 +28,7 @@
 }
 
 .subscription__input-mail {
-    width:450px;
+    width:100%;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -44,10 +44,13 @@
     &:focus {
         border: 1px solid $accent-color;
     }
-    @media screen and (min-width: 1200px) {
-     width: 358px;
- }
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;}
 
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .subscription__form {
@@ -81,6 +84,7 @@
     background-color: $accent-color;
     align-items: center;
     transition: $reg-trans;
+    overflow-y: auto;
 
     &:active,
     &:hover,
@@ -101,3 +105,4 @@
 .subscription__btn-icon {
     fill: $accent-text-color;
 }
+

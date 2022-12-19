@@ -5,7 +5,8 @@
 .team__list {
     display: block;
     list-style: none;
-    
+   
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -22,22 +23,23 @@
 .team__item {
 
     background-color: $accent-text-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: $shadow;
     border-radius: 0px 0px 4px 4px;
     padding-left: auto;
     padding-right: auto;
+    margin-bottom: 30px;
 
-    &:not(:last-child) {
-        @media screen and (max-width: 768px) {
-            margin-bottom: 30px;
-            }
-        }
+    // &:not(:last-child) {
+    //     @media screen and (max-width: 1200px) {
+    //         margin-bottom: 30px;
+    //         }
+    //     }
 }
 
 .team__img {
-    
-    margin: auto;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
 }
 
 .team__item-description {

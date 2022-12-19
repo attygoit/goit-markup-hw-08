@@ -18,6 +18,8 @@ body {
 
 img {
   display: block;
+  height: auto;
+  max-width: 100;
 }
 
 svg path {
@@ -424,7 +426,7 @@ svg path {
           transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
-  max-height: 90hv;
+  max-height: 90vh;
   overflow-y: scroll;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -434,11 +436,12 @@ svg path {
   transition: background-color 250ms linear, -webkit-transform 250ms ease-in-out 250ms;
   transition: background-color 250ms linear, transform 250ms ease-in-out 250ms;
   transition: background-color 250ms linear, transform 250ms ease-in-out 250ms, -webkit-transform 250ms ease-in-out 250ms;
+  overflow-y: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
+    max-height: 581px;
   }
 }
 
@@ -724,7 +727,7 @@ svg path {
 }
 
 .subscription__input-mail {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -741,6 +744,11 @@ svg path {
 }
 .subscription__input-mail:focus {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .subscription__input-mail {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input-mail {
@@ -797,6 +805,7 @@ svg path {
           align-items: center;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
 }
 .subscription__btn:active, .subscription__btn:hover, .subscription__btn:focus {
   background-color: #188ce8;
@@ -1240,15 +1249,13 @@ svg path {
   border-radius: 0px 0px 4px 4px;
   padding-left: auto;
   padding-right: auto;
-}
-@media screen and (max-width: 768px) {
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 
 .team__img {
-  margin: auto;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
 .team__item-description {
