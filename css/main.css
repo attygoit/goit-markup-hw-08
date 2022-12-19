@@ -18,8 +18,6 @@ body {
 
 img {
   display: block;
-  height: auto;
-  max-width: 100;
 }
 
 svg path {
@@ -1260,7 +1258,7 @@ svg path {
 
 .team__img {
   width: 100%;
-  min-height: 100%;
+  height: auto;
   margin: 0;
 }
 
